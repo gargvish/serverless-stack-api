@@ -219,7 +219,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z/create.zip"
+                "S3Key": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z/create.zip"
               },
               "Handler": "create.main",
               "Runtime": "nodejs12.x",
@@ -249,7 +249,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z/get.zip"
+                "S3Key": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z/get.zip"
               },
               "Handler": "get.main",
               "Runtime": "nodejs12.x",
@@ -279,7 +279,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z/list.zip"
+                "S3Key": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z/list.zip"
               },
               "Handler": "list.main",
               "Runtime": "nodejs12.x",
@@ -309,7 +309,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z/update.zip"
+                "S3Key": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z/update.zip"
               },
               "Handler": "update.main",
               "Runtime": "nodejs12.x",
@@ -339,7 +339,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z/delete.zip"
+                "S3Key": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z/delete.zip"
               },
               "Handler": "delete.main",
               "Runtime": "nodejs12.x",
@@ -362,24 +362,24 @@
               "DeleteLogGroup"
             ]
           },
-          "ListLambdaVersionGbzDqbIqDCfJlDOhfdMAt9WiC78QWvzgUIpRExkPl8": {
+          "ListLambdaVersionzKPC6cEKFKK1lHNYigMNPioTuYSO21kLNJJcVHFwyPU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ListLambdaFunction"
               },
-              "CodeSha256": "zkeG538p5FNytuEIW0oTo3KqGYjmJu7tiPDD/QzJu6o="
+              "CodeSha256": "Og0xHv4oXuqV6uqGO4XYYe3LJI7Xy5Adyu5iUps0sM4="
             }
           },
-          "UpdateLambdaVersiongNwfLjkM1eqNxceTbfaf6dmZGEUXMPMXDKg5Cfj2Bs": {
+          "UpdateLambdaVersionOi61xjH3rdBpxh9cMdhM7pZEATT1vGcRnDUnYjwQOUM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UpdateLambdaFunction"
               },
-              "CodeSha256": "FfG0LxhyT0rz5ojFomFhSSTyKCUoJyOKO3MBHgkN0Lc="
+              "CodeSha256": "4yBIJhIKWhnbKeC22xsSCafGFCgtykr5BAibcpDatZ0="
             }
           },
           "GetLambdaVersionniVvOX6Htez9Rkpjsc9rBUpR0qCGaZMqdIlVRN9Y": {
@@ -392,24 +392,24 @@
               "CodeSha256": "735/Nd1BoXZ6+xQ3dIY8tquV4esj4W4sh4VdI8ItwGM="
             }
           },
-          "DeleteLambdaVersionz1zchn7YrS7u2r0SXacrtiB6cyRr8as84RbzaoMpYqU": {
+          "DeleteLambdaVersionSb2Q5nd1wzgvrbxrMptNWDXQyQ5GQ1qvBfmBCxyI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteLambdaFunction"
               },
-              "CodeSha256": "NMC6hLWlV25rQ6XzRCrO7uOVYdP9C0MhXA6u4+shBpk="
+              "CodeSha256": "UIvDnIrSqzwKg3c/Ddf/2aC3VX5rKiKaOReCwNgTEkE="
             }
           },
-          "CreateLambdaVersionwJ3t9wVT7b3Wg3fMxIL4xlxohP8g2gJireNItXE": {
+          "CreateLambdaVersiontTBDAsmP2H1VfzCeXaIcDfid5IVMYdUDzHBx2RVqo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateLambdaFunction"
               },
-              "CodeSha256": "hJuzyGeWFxng8/p+ujuf5BvvfrXThvbUjMmmUHu/M/U="
+              "CodeSha256": "Eanyd+8s0Xycfsw9hLT4Xgcj1hpspJUH8xgVJFsV9a8="
             }
           },
           "ApiGatewayRestApi": {
@@ -463,7 +463,7 @@
                 "Ref": "ApiGatewayRestApi"
               },
               "ApiKeyRequired": false,
-              "AuthorizationType": "NONE",
+              "AuthorizationType": "AWS_IAM",
               "Integration": {
                 "IntegrationHttpMethod": "POST",
                 "Type": "AWS_PROXY",
@@ -506,7 +506,7 @@
                 "Ref": "ApiGatewayRestApi"
               },
               "ApiKeyRequired": false,
-              "AuthorizationType": "NONE",
+              "AuthorizationType": "AWS_IAM",
               "Integration": {
                 "IntegrationHttpMethod": "POST",
                 "Type": "AWS_PROXY",
@@ -549,7 +549,7 @@
                 "Ref": "ApiGatewayRestApi"
               },
               "ApiKeyRequired": false,
-              "AuthorizationType": "NONE",
+              "AuthorizationType": "AWS_IAM",
               "Integration": {
                 "IntegrationHttpMethod": "POST",
                 "Type": "AWS_PROXY",
@@ -592,7 +592,7 @@
                 "Ref": "ApiGatewayRestApi"
               },
               "ApiKeyRequired": false,
-              "AuthorizationType": "NONE",
+              "AuthorizationType": "AWS_IAM",
               "Integration": {
                 "IntegrationHttpMethod": "POST",
                 "Type": "AWS_PROXY",
@@ -635,7 +635,7 @@
                 "Ref": "ApiGatewayRestApi"
               },
               "ApiKeyRequired": false,
-              "AuthorizationType": "NONE",
+              "AuthorizationType": "AWS_IAM",
               "Integration": {
                 "IntegrationHttpMethod": "POST",
                 "Type": "AWS_PROXY",
@@ -666,7 +666,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1616824337556": {
+          "ApiGatewayDeployment1616876790749": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -877,13 +877,13 @@
           "ListLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ListLambdaVersionGbzDqbIqDCfJlDOhfdMAt9WiC78QWvzgUIpRExkPl8"
+              "Ref": "ListLambdaVersionzKPC6cEKFKK1lHNYigMNPioTuYSO21kLNJJcVHFwyPU"
             }
           },
           "UpdateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateLambdaVersiongNwfLjkM1eqNxceTbfaf6dmZGEUXMPMXDKg5Cfj2Bs"
+              "Ref": "UpdateLambdaVersionOi61xjH3rdBpxh9cMdhM7pZEATT1vGcRnDUnYjwQOUM"
             }
           },
           "GetLambdaFunctionQualifiedArn": {
@@ -895,13 +895,13 @@
           "DeleteLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteLambdaVersionz1zchn7YrS7u2r0SXacrtiB6cyRr8as84RbzaoMpYqU"
+              "Ref": "DeleteLambdaVersionSb2Q5nd1wzgvrbxrMptNWDXQyQ5GQ1qvBfmBCxyI"
             }
           },
           "CreateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateLambdaVersionwJ3t9wVT7b3Wg3fMxIL4xlxohP8g2gJireNItXE"
+              "Ref": "CreateLambdaVersiontTBDAsmP2H1VfzCeXaIcDfid5IVMYdUDzHBx2RVqo"
             }
           },
           "ServiceEndpoint": {
@@ -1041,6 +1041,11 @@
             "http": {
               "path": "notes",
               "method": "post",
+              "authorizer": {
+                "type": "AWS_IAM",
+                "managedExternally": false,
+                "identitySource": "method.request.header.Authorization"
+              },
               "integration": "AWS_PROXY"
             }
           }
@@ -1053,7 +1058,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateLambdaVersionwJ3t9wVT7b3Wg3fMxIL4xlxohP8g2gJireNItXE"
+        "versionLogicalId": "CreateLambdaVersiontTBDAsmP2H1VfzCeXaIcDfid5IVMYdUDzHBx2RVqo"
       },
       "get": {
         "handler": "get.main",
@@ -1062,6 +1067,11 @@
             "http": {
               "path": "notes/{id}",
               "method": "get",
+              "authorizer": {
+                "type": "AWS_IAM",
+                "managedExternally": false,
+                "identitySource": "method.request.header.Authorization"
+              },
               "integration": "AWS_PROXY"
             }
           }
@@ -1083,6 +1093,11 @@
             "http": {
               "path": "notes",
               "method": "get",
+              "authorizer": {
+                "type": "AWS_IAM",
+                "managedExternally": false,
+                "identitySource": "method.request.header.Authorization"
+              },
               "integration": "AWS_PROXY"
             }
           }
@@ -1095,7 +1110,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ListLambdaVersionGbzDqbIqDCfJlDOhfdMAt9WiC78QWvzgUIpRExkPl8"
+        "versionLogicalId": "ListLambdaVersionzKPC6cEKFKK1lHNYigMNPioTuYSO21kLNJJcVHFwyPU"
       },
       "update": {
         "handler": "update.main",
@@ -1104,6 +1119,11 @@
             "http": {
               "path": "notes/{id}",
               "method": "put",
+              "authorizer": {
+                "type": "AWS_IAM",
+                "managedExternally": false,
+                "identitySource": "method.request.header.Authorization"
+              },
               "integration": "AWS_PROXY"
             }
           }
@@ -1116,7 +1136,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "UpdateLambdaVersiongNwfLjkM1eqNxceTbfaf6dmZGEUXMPMXDKg5Cfj2Bs"
+        "versionLogicalId": "UpdateLambdaVersionOi61xjH3rdBpxh9cMdhM7pZEATT1vGcRnDUnYjwQOUM"
       },
       "delete": {
         "handler": "delete.main",
@@ -1125,6 +1145,11 @@
             "http": {
               "path": "notes/{id}",
               "method": "delete",
+              "authorizer": {
+                "type": "AWS_IAM",
+                "managedExternally": false,
+                "identitySource": "method.request.header.Authorization"
+              },
               "integration": "AWS_PROXY"
             }
           }
@@ -1137,7 +1162,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "DeleteLambdaVersionz1zchn7YrS7u2r0SXacrtiB6cyRr8as84RbzaoMpYqU"
+        "versionLogicalId": "DeleteLambdaVersionSb2Q5nd1wzgvrbxrMptNWDXQyQ5GQ1qvBfmBCxyI"
       }
     },
     "configValidationMode": "warn",
@@ -1149,7 +1174,7 @@
       },
       "package": {
         "individually": true,
-        "artifactDirectoryName": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z"
+        "artifactDirectoryName": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z"
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
@@ -1165,7 +1190,7 @@
   },
   "package": {
     "individually": true,
-    "artifactDirectoryName": "serverless/notes-api/prod/1616824343826-2021-03-27T05:52:23.826Z",
+    "artifactDirectoryName": "serverless/notes-api/prod/1616876795988-2021-03-27T20:26:35.988Z",
     "artifact": ""
   }
 }
